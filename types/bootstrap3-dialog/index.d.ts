@@ -29,7 +29,9 @@ declare namespace BootstrapDialog {
         TYPE_DANGER: string;
 
         (options: DialogOptions): DialogContext;
+        alert(options: DialogOptions): void;
         alert(message: string, closeCallback?: () => void): void;
+        confirm(options: DialogOptions): void;
         confirm(message: string, closeCallback?: (result: boolean) => void): void;
         show(options: DialogOptions): DialogInstance;
     }
